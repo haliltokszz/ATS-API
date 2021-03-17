@@ -11,9 +11,7 @@ const db = require("./models");
 const bodyParser = require("body-parser");
 const initRoutes = require("./routes/index");
 global.__basedir = __dirname;
-app.use(express.static(__dirname+"/ATSPersonelGiyim/dist/ATSPersonelGiyim/"));
-
-
+//app.use(express.static(__dirname+"/ATSPersonelGiyim/dist/ATSPersonelGiyim/"));
 
 var whitelist = ['http://localhost:4200', 'http://localhost:8080', 'http://atspersonelgiyim.com', 'https://atspersonelgiyim.com']
 var corsOptions = {
